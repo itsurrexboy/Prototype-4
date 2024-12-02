@@ -78,12 +78,9 @@ public class PlayerControllerX : MonoBehaviour
 
     void PowerupFx()
     {
-        if (hasPowerup)
+        if (hasPowerup && Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                powerupFx.Play();
-            }
+            powerupFx.Play();
         }
     }
 
